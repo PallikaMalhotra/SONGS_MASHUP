@@ -1,0 +1,85 @@
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(120deg,#0f172a,#1e293b);
+font-family:'Segoe UI',sans-serif;
+color:white;
+}
+
+.bg{
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle at 30% 30%,#334155,transparent 40%),
+radial-gradient(circle at 70% 70%,#1e40af,transparent 40%);
+filter:blur(120px);
+}
+
+.studio-card{
+position:relative;
+background:rgba(255,255,255,0.06);
+backdrop-filter:blur(25px);
+padding:60px;
+border-radius:28px;
+box-shadow:0 40px 80px rgba(0,0,0,.5);
+transform:perspective(900px) rotateX(6deg);
+animation:float 4s ease-in-out infinite alternate;
+}
+
+@keyframes float{
+to{transform:perspective(900px) rotateX(10deg) translateY(-18px);}
+}
+
+h1{
+font-size:42px;
+margin-bottom:12px;
+}
+
+p{
+opacity:.7;
+margin-bottom:30px;
+}
+
+input{
+display:block;
+width:280px;
+padding:14px;
+margin:14px 0;
+border-radius:14px;
+border:none;
+outline:none;
+font-size:15px;
+background:#1e293b;
+color:white;
+}
+
+button{
+margin-top:25px;
+padding:15px 50px;
+border:none;
+border-radius:30px;
+background:#1e40af;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+background:#2563eb;
+}
+
+.signature{
+margin-top:35px;
+font-size:13px;
+opacity:.6;
+}
+
+.signature span{
+font-weight:600;
+color:#93c5fd;
+}
